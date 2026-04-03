@@ -2,9 +2,12 @@ import SwiftUI
 
 @main
 struct ProductCatalogAppApp: App {
+    private let persistenceController = PersistenceController.shared
+
     var body: some Scene {
         WindowGroup {
-            Text("Product Catalog")
+            ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
