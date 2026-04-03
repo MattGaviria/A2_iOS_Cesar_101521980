@@ -2,9 +2,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
+        TabView {
             ProductNavigatorView()
-                .navigationTitle("Products")
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+
+            ProductSearchView()
+                .tabItem {
+                    Label("Search", systemImage: "magnifyingglass")
+                }
+
+            ProductListView()
+                .tabItem {
+                    Label("List", systemImage: "list.bullet")
+                }
+
+            AddProductView()
+                .tabItem {
+                    Label("Add", systemImage: "plus.circle")
+                }
         }
     }
 }
