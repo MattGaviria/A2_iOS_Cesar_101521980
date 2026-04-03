@@ -1,6 +1,6 @@
 # A2 iOS Assignment - Product Catalog (Core Data)
 
-iPhone app for a course lab test.
+iPhone app for a class assingment
 
 ## Requirements Covered
 - Store at least 10 products using Core Data
