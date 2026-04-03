@@ -8,6 +8,7 @@ struct AddProductView: View {
     @State private var productProvider = ""
     @State private var productPrice = ""
     @State private var saveMessage = ""
+    @State private var isErrorMessage = false
 
     var body: some View {
         NavigationStack {
@@ -30,7 +31,7 @@ struct AddProductView: View {
                 if !saveMessage.isEmpty {
                     Section {
                         Text(saveMessage)
-                            .foregroundStyle(.green)
+                            .foregroundStyle(isErrorMessage ? .red : .green)
                     }
                 }
             }
@@ -39,27 +40,40 @@ struct AddProductView: View {
     }
 
     private func saveProduct() {
+        let name = productName.trimmingCharacters(in: .whitespacesAndNewlines)
+        let description = productDescription.trimmingCharacters(in: .whitespacesAndNewlines)
+        let provider = productProvider.trimmingCharacters(in: .whitespacesAndNewlines)
+
+        guard !name.isEmpty, !description.isEmpty, !provider.isEmpty else {
+            isErrorMessage = true
+            saveMessage = "All fields are required."
+            return
+        }
+
         guard let price = Double(productPrice) else {
+            isErrorMessage = true
             saveMessage = "Please enter a valid price."
             return
         }
 
         let newProduct = Product(context: viewContext)
         newProduct.productID = UUID()
-        newProduct.productName = productName
-        newProduct.productDescriptionText = productDescription
-        newProduct.productProvider = productProvider
+        newProduct.productName = name
+        newProduct.productDescriptionText = description
+        newProduct.productProvider = provider
         newProduct.productPrice = price
         newProduct.createdAt = Date()
 
         do {
             try viewContext.save()
+            isErrorMessage = false
             saveMessage = "Product added successfully."
             productName = ""
             productDescription = ""
             productProvider = ""
             productPrice = ""
         } catch {
+            isErrorMessage = true
             saveMessage = "Failed to save product."
         }
     }
