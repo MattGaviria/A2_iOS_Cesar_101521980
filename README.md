@@ -1,12 +1,25 @@
-# A2 iOS Assignment
+# A2 iOS Assignment - Product Catalog (Core Data)
 
-Beginner-level iPhone app project for course lab test.
+iPhone app for a course lab test.
 
-## Current status
-- Repository initialized
-- Project scaffold in progress
+## Requirements Covered
+- Store at least 10 products using Core Data
+- Product fields:
+	- Product ID
+	- Product Name
+	- Product Description
+	- Product Price
+	- Product Provider
+- On app start, show first product and support navigation through products
+- Search by product name and product description
+- Add a new product
+- Show full product list with name and description
 
-## Notes
-- Focus on functionality over polish
-- UI kept simple
-- No tests required for this course
+## Project Notes
+- Focus on functionality first
+- Keep UI simple and beginner-friendly
+- No tests included (not required for this course)
+
+## Student Info
+- Name: Cesar
+- Student ID: 101521980
