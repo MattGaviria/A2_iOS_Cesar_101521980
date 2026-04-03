@@ -18,7 +18,7 @@ struct ProductSearchView: View {
                 }
 
                 Section("Results") {
-                    ForEach(products) { product in
+                    ForEach(filteredProducts) { product in
                         VStack(alignment: .leading, spacing: 4) {
                             Text(product.wrappedName)
                                 .font(.headline)
@@ -30,6 +30,18 @@ struct ProductSearchView: View {
                 }
             }
             .navigationTitle("Search")
+        }
+    }
+
+    private var filteredProducts: [Product] {
+        let query = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !query.isEmpty else {
+            return Array(products)
+        }
+
+        return products.filter { product in
+            product.wrappedName.localizedCaseInsensitiveContains(query) ||
+            product.wrappedDescription.localizedCaseInsensitiveContains(query)
         }
     }
 }
