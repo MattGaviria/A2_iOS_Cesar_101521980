@@ -5,7 +5,7 @@ struct ProductNavigatorView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Product.wrappedCreatedAt, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Product.createdAt, ascending: true)],
         animation: .default
     ) private var products: FetchedResults<Product>
 

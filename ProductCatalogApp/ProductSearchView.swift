@@ -3,7 +3,7 @@ import SwiftUI
 
 struct ProductSearchView: View {
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Product.wrappedName, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Product.productName, ascending: true)],
         animation: .default
     ) private var products: FetchedResults<Product>
 
