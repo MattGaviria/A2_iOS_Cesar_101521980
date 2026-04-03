@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000010 /* ProductCatalogAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000020 /* ProductCatalogAppApp.swift */; };
+		A00000000000000000000011 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000021 /* ContentView.swift */; };
+		A00000000000000000000012 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000022 /* Persistence.swift */; };
+		A00000000000000000000013 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000023 /* Product+CoreDataClass.swift */; };
+		A00000000000000000000014 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000024 /* Product+CoreDataProperties.swift */; };
+		A00000000000000000000015 /* ProductSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000025 /* ProductSeeder.swift */; };
+		A00000000000000000000016 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000026 /* ProductCardView.swift */; };
+		A00000000000000000000017 /* ProductNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000027 /* ProductNavigatorView.swift */; };
+		A00000000000000000000018 /* ProductSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000028 /* ProductSearchView.swift */; };
+		A00000000000000000000019 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000029 /* ProductListView.swift */; };
+		A0000000000000000000001A /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000002A /* AddProductView.swift */; };
+		A0000000000000000000001B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000002C /* Assets.xcassets */; };
+		A0000000000000000000001C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000002D /* Preview Assets.xcassets */; };
+		A0000000000000000000001D /* ProductCatalogApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000002B /* ProductCatalogApp.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000002 /* ProductCatalogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductCatalogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000020 /* ProductCatalogAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCatalogAppApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000021 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A00000000000000000000022 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A00000000000000000000023 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A00000000000000000000024 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A00000000000000000000025 /* ProductSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSeeder.swift; sourceTree = "<group>"; };
+		A00000000000000000000026 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		A00000000000000000000027 /* ProductNavigatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNavigatorView.swift; sourceTree = "<group>"; };
+		A00000000000000000000028 /* ProductSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSearchView.swift; sourceTree = "<group>"; };
+		A00000000000000000000029 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		A0000000000000000000002A /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
+		A0000000000000000000002B /* ProductCatalogApp.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodeld; path = ProductCatalogApp.xcdatamodeld; sourceTree = "<group>"; };
+		A0000000000000000000002C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0000000000000000000002D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0000000000000000000002E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000003 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000004 /* ProductCatalogApp */,
+				A00000000000000000000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000004 /* ProductCatalogApp */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000020 /* ProductCatalogAppApp.swift */,
+				A00000000000000000000021 /* ContentView.swift */,
+				A00000000000000000000022 /* Persistence.swift */,
+				A00000000000000000000023 /* Product+CoreDataClass.swift */,
+				A00000000000000000000024 /* Product+CoreDataProperties.swift */,
+				A00000000000000000000025 /* ProductSeeder.swift */,
+				A00000000000000000000026 /* ProductCardView.swift */,
+				A00000000000000000000027 /* ProductNavigatorView.swift */,
+				A00000000000000000000028 /* ProductSearchView.swift */,
+				A00000000000000000000029 /* ProductListView.swift */,
+				A0000000000000000000002A /* AddProductView.swift */,
+				A0000000000000000000002B /* ProductCatalogApp.xcdatamodeld */,
+				A0000000000000000000002C /* Assets.xcassets */,
+				A0000000000000000000002F /* Preview Content */,
+				A0000000000000000000002E /* Info.plist */,
+			);
+			path = ProductCatalogApp;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000002 /* ProductCatalogApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000002F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A0000000000000000000002D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000001 /* ProductCatalogApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0000000000000000000000A /* Build configuration list for PBXNativeTarget "ProductCatalogApp" */;
+			buildPhases = (
+				A00000000000000000000007 /* Sources */,
+				A00000000000000000000006 /* Frameworks */,
+				A00000000000000000000008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProductCatalogApp;
+			productName = ProductCatalogApp;
+			productReference = A00000000000000000000002 /* ProductCatalogApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A00000000000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000009 /* Build configuration list for PBXProject "ProductCatalogApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000003;
+			productRefGroup = A00000000000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000001 /* ProductCatalogApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0000000000000000000001B /* Assets.xcassets in Resources */,
+				A0000000000000000000001C /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000010 /* ProductCatalogAppApp.swift in Sources */,
+				A00000000000000000000011 /* ContentView.swift in Sources */,
+				A00000000000000000000012 /* Persistence.swift in Sources */,
+				A00000000000000000000013 /* Product+CoreDataClass.swift in Sources */,
+				A00000000000000000000014 /* Product+CoreDataProperties.swift in Sources */,
+				A00000000000000000000015 /* ProductSeeder.swift in Sources */,
+				A00000000000000000000016 /* ProductCardView.swift in Sources */,
+				A00000000000000000000017 /* ProductNavigatorView.swift in Sources */,
+				A00000000000000000000018 /* ProductSearchView.swift in Sources */,
+				A00000000000000000000019 /* ProductListView.swift in Sources */,
+				A0000000000000000000001A /* AddProductView.swift in Sources */,
+				A0000000000000000000001D /* ProductCatalogApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A0000000000000000000000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0000000000000000000000C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A0000000000000000000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProductCatalogApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ProductCatalogApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.georgebrown.productcatalogapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A0000000000000000000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ProductCatalogApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ProductCatalogApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.georgebrown.productcatalogapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000009 /* Build configuration list for PBXProject "ProductCatalogApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000000000000000000000B /* Debug */,
+				A0000000000000000000000C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0000000000000000000000A /* Build configuration list for PBXNativeTarget "ProductCatalogApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000000000000000000000D /* Debug */,
+				A0000000000000000000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000000 /* Project object */;
+}
