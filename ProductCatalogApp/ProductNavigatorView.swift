@@ -19,6 +19,28 @@ struct ProductNavigatorView: View {
 
             if let current = currentProduct {
                 ProductCardView(product: current)
+
+                HStack {
+                    Button("Previous") {
+                        currentIndex = max(currentIndex - 1, 0)
+                    }
+                    .buttonStyle(.bordered)
+                    .disabled(currentIndex == 0)
+
+                    Spacer()
+
+                    Text("\(currentIndex + 1) / \(products.count)")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+
+                    Spacer()
+
+                    Button("Next") {
+                        currentIndex = min(currentIndex + 1, products.count - 1)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .disabled(currentIndex >= products.count - 1)
+                }
             } else {
                 Text("No products available.")
                     .foregroundStyle(.secondary)
