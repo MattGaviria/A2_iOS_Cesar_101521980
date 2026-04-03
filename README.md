@@ -18,8 +18,8 @@ iPhone app for a course lab test.
 ## Project Notes
 - Focus on functionality first
 - Keep UI simple and beginner-friendly
-- No tests included (not required for this course)
+
 
 ## Student Info
-- Name: Cesar
+- Name: Cesar Gaviria Sepulveda
 - Student ID: 101521980
