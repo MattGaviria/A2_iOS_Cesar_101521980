@@ -9,19 +9,29 @@ struct ProductListView: View {
 
     var body: some View {
         NavigationStack {
-            if products.isEmpty {
-                ContentUnavailableView("No Products", systemImage: "tray")
-            } else {
-                List(products) { product in
-                    VStack(alignment: .leading, spacing: 6) {
-                        Text(product.wrappedName)
-                            .font(.headline)
+            Group {
+                if products.isEmpty {
+                    VStack(spacing: 12) {
+                        Image(systemName: "tray")
+                            .font(.largeTitle)
+                            .foregroundColor(.gray)
 
-                        Text(product.wrappedDescription)
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
+                        Text("No Products")
+                            .font(.headline)
                     }
-                    .padding(.vertical, 4)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                } else {
+                    List(products) { product in
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text(product.wrappedName)
+                                .font(.headline)
+
+                            Text(product.wrappedDescription)
+                                .font(.subheadline)
+                                .foregroundStyle(.secondary)
+                        }
+                        .padding(.vertical, 4)
+                    }
                 }
             }
             .navigationTitle("All Products")

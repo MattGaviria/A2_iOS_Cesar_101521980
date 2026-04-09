@@ -20,7 +20,7 @@
 		A0000000000000000000001A /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000002A /* AddProductView.swift */; };
 		A0000000000000000000001B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000002C /* Assets.xcassets */; };
 		A0000000000000000000001C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000002D /* Preview Assets.xcassets */; };
-		A0000000000000000000001D /* ProductCatalogApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000002B /* ProductCatalogApp.xcdatamodeld */; };
+		C3DFE1A32F8755940058D355 /* ProductCatalogApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3DFE1A12F8755940058D355 /* ProductCatalogApp.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +36,10 @@
 		A00000000000000000000028 /* ProductSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSearchView.swift; sourceTree = "<group>"; };
 		A00000000000000000000029 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
 		A0000000000000000000002A /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
-		A0000000000000000000002B /* ProductCatalogApp.xcdatamodeld */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodeld; path = ProductCatalogApp.xcdatamodeld; sourceTree = "<group>"; };
 		A0000000000000000000002C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0000000000000000000002D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0000000000000000000002E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3DFE1A22F8755940058D355 /* ProductCatalogApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductCatalogApp.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +75,10 @@
 				A00000000000000000000028 /* ProductSearchView.swift */,
 				A00000000000000000000029 /* ProductListView.swift */,
 				A0000000000000000000002A /* AddProductView.swift */,
-				A0000000000000000000002B /* ProductCatalogApp.xcdatamodeld */,
 				A0000000000000000000002C /* Assets.xcassets */,
 				A0000000000000000000002F /* Preview Content */,
 				A0000000000000000000002E /* Info.plist */,
+				C3DFE1A12F8755940058D355 /* ProductCatalogApp.xcdatamodeld */,
 			);
 			path = ProductCatalogApp;
 			sourceTree = "<group>";
@@ -171,6 +171,7 @@
 				A00000000000000000000010 /* ProductCatalogAppApp.swift in Sources */,
 				A00000000000000000000011 /* ContentView.swift in Sources */,
 				A00000000000000000000012 /* Persistence.swift in Sources */,
+				C3DFE1A32F8755940058D355 /* ProductCatalogApp.xcdatamodeld in Sources */,
 				A00000000000000000000013 /* Product+CoreDataClass.swift in Sources */,
 				A00000000000000000000014 /* Product+CoreDataProperties.swift in Sources */,
 				A00000000000000000000015 /* ProductSeeder.swift in Sources */,
@@ -179,7 +180,6 @@
 				A00000000000000000000018 /* ProductSearchView.swift in Sources */,
 				A00000000000000000000019 /* ProductListView.swift in Sources */,
 				A0000000000000000000001A /* AddProductView.swift in Sources */,
-				A0000000000000000000001D /* ProductCatalogApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +314,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C3DFE1A12F8755940058D355 /* ProductCatalogApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3DFE1A22F8755940058D355 /* ProductCatalogApp.xcdatamodel */,
+			);
+			currentVersion = C3DFE1A22F8755940058D355 /* ProductCatalogApp.xcdatamodel */;
+			path = ProductCatalogApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A00000000000000000000000 /* Project object */;
 }
